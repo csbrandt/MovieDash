@@ -1,0 +1,24 @@
+{
+  "name": "MovieDash",
+  "version": "0.0.0",
+  "authors": [
+    "csbrandt <cs.brandt@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "InkJS": "~3.1.0",
+    "backbone": "~1.1.2",
+    "jquery": "~2.1.1",
+    "requirejs": "~2.1.15",
+    "lodash": "~2.4.1",
+    "requirejs-text": "~2.0.12",
+    "handlebars": "~2.0.0"
+  }
+}

@@ -1,0 +1,61 @@
+<div class="ink-grid">
+   <h1>Movie Dashboard</h1>
+
+   <div class="column-group">
+      <div class="xlarge-45 large-45 medium-45 small-100 tiny-100">
+         <h3>Upcoming Movies</h3>
+         <table class="ink-table alternating hover bordered">
+            <thead>
+               <tr>
+                  <th class="align-left">Title</th>
+                  <th class="align-left">Rating</th>
+                  <th class="align-left">Date</th>
+               </tr>
+            </thead>
+            <tbody>
+               {{#each upcoming}}
+
+               <tr>
+
+                  <td><a href="#details/{{id}}">{{title}}</a>
+                  </td>
+                  <td><a href="#details/{{id}}">{{mpaa_rating}}</a>
+                  </td>
+                  <td class="date"><a href="#details/{{id}}">{{release_dates.theater}}</a>
+                  </td>
+               </tr>
+
+               {{/each}}
+            </tbody>
+         </table>
+      </div>
+      <div id="in_theaters" class="xlarge-45 large-45 medium-45 small-100 tiny-100">
+         <h3>In Theaters</h3>
+         <table class="ink-table alternating hover bordered">
+            <thead>
+               <tr>
+                  <th class="align-left">Title</th>
+                  <th class="align-left">Rating</th>
+                  <th class="align-left">Score</th>
+               </tr>
+            </thead>
+            <tbody>
+               {{#each inTheaters}}
+
+               <tr>
+
+                  <td><a href="#details/{{id}}">{{title}}</a>
+                  </td>
+                  <td><a href="#details/{{id}}">{{mpaa_rating}}</a>
+                  </td>
+                  <td><a href="#details/{{id}}">{{ratings.audience_score}}</a>
+                  </td>
+               </tr>
+
+               {{/each}}
+            </tbody>
+         </table>
+      </div>
+   </div>
+</div>
+

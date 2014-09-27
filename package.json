@@ -1,0 +1,14 @@
+{
+  "name": "MovieDash",
+  "version": "0.0.0",
+  "description": "",
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt-jsbeautifier": "~0.2.7",
+    "grunt": "~0.4.5",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-requirejs": "~0.4.4",
+    "grunt-contrib-less": "~0.11.4"
+  }
+}
